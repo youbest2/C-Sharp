@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LoginInfoDataSet1" targetNamespace="http://tempuri.org/LoginInfoDataSet1.xsd" xmlns:mstns="http://tempuri.org/LoginInfoDataSet1.xsd" xmlns="http://tempuri.org/LoginInfoDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LoginInfoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LoginInfoConnectionString (Settings)" PropertyReference="ApplicationSettings.Test_access.Properties.Settings.GlobalReference.Default.LoginInfoConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LoginInfoTableAdapter" GeneratorDataComponentClassName="LoginInfoTableAdapter" Name="LoginInfo" UserDataComponentName="LoginInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LoginInfoConnectionString (Settings)" DbObjectName="LoginInfo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PASS FROM LoginInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PASS" DataSetColumn="PASS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LoginInfoDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LoginInfoDataSet1" msprop:Generator_UserDSName="LoginInfoDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LoginInfo" msprop:Generator_TableClassName="LoginInfoDataTable" msprop:Generator_TableVarName="tableLoginInfo" msprop:Generator_TablePropName="LoginInfo" msprop:Generator_RowDeletingName="LoginInfoRowDeleting" msprop:Generator_RowChangingName="LoginInfoRowChanging" msprop:Generator_RowEvHandlerName="LoginInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="LoginInfoRowDeleted" msprop:Generator_UserTableName="LoginInfo" msprop:Generator_RowChangedName="LoginInfoRowChanged" msprop:Generator_RowEvArgName="LoginInfoRowChangeEvent" msprop:Generator_RowClassName="LoginInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PASS" msprop:Generator_ColumnVarNameInTable="columnPASS" msprop:Generator_ColumnPropNameInRow="PASS" msprop:Generator_ColumnPropNameInTable="PASSColumn" msprop:Generator_UserColumnName="PASS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
