@@ -1,0 +1,10 @@
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\bin\Debug\Test_access.exe.config
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\bin\Debug\Test_access.exe
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\bin\Debug\Test_access.pdb
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\obj\Debug\Test_access.csprojResolveAssemblyReference.cache
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\obj\Debug\Test_access.Properties.Resources.resources
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\obj\Debug\Test_access.csproj.GenerateResource.Cache
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\obj\Debug\Test_access.exe
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\obj\Debug\Test_access.pdb
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\obj\Debug\Test_access.Form1.resources
+c:\users\uids4736\documents\visual studio 2012\Projects\Test_access\Test_access\bin\Debug\LoginInfo.accdb
