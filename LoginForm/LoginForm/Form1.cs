@@ -70,7 +70,7 @@ namespace LoginForm
             {
                 MessageBox.Show("login successful");
             }
-            if (count > 1)
+            else if (count > 1)
             {
                 MessageBox.Show("Duplicate ID and PASSWORD");
             }
