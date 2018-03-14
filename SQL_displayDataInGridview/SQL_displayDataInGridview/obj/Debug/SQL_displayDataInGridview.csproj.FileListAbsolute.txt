@@ -1,0 +1,11 @@
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\bin\Debug\Database1.mdf
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\bin\Debug\Database1_log.ldf
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\bin\Debug\SQL_displayDataInGridview.exe.config
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\bin\Debug\SQL_displayDataInGridview.exe
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\bin\Debug\SQL_displayDataInGridview.pdb
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\obj\Debug\SQL_displayDataInGridview.Form1.resources
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\obj\Debug\SQL_displayDataInGridview.Form2.resources
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\obj\Debug\SQL_displayDataInGridview.Properties.Resources.resources
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\obj\Debug\SQL_displayDataInGridview.csproj.GenerateResource.Cache
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\obj\Debug\SQL_displayDataInGridview.exe
+c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\obj\Debug\SQL_displayDataInGridview.pdb
