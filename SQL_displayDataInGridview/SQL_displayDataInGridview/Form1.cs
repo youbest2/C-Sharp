@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace SQL_displayDataInGridview
 {
     public partial class Form1 : Form
@@ -32,17 +33,19 @@ namespace SQL_displayDataInGridview
 
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
-            ToolTip buttonToolTip = new ToolTip();
-            buttonToolTip.ToolTipTitle = "Button Tooltip";
-            buttonToolTip.IsBalloon = true;
-            buttonToolTip.ShowAlways = true;
-            buttonToolTip.SetToolTip(button1, "Hi User,Click me."); 
+        //    ToolTip buttonToolTip = new ToolTip();
+        //    buttonToolTip.ToolTipTitle = "Button Tooltip";
+        //    buttonToolTip.IsBalloon = true;
+        //    buttonToolTip.ShowAlways = true;
+        //    buttonToolTip.SetToolTip(button1, "Hi User,Click me."); 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+////////////////////////////////////////////////// TO INSERT THE DATA IN LOCAL DATABASE ///////////////////////////////////
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -83,13 +86,14 @@ namespace SQL_displayDataInGridview
             
 
         }
-
+////////////////////////////////////////////////// TO SHOW THE DATA IN DATAGRID VIEW - LOCAL DATABASE ///////////////////////////////////
         private void button2_Click(object sender, EventArgs e)
         {
+            connection.Close();
             this.Hide();
             Form2 f2 = new Form2();
             f2.Show();
-            connection.Close();
+            
             // TODO: This line of code loads data into the 'database1DataSet1.Students' table. You can move, or remove it, as needed.
            // this.studentsTableAdapter.Fill(this.database1DataSet1.Students);
         }
@@ -98,7 +102,7 @@ namespace SQL_displayDataInGridview
         {
             Application.Exit();
         }
-
+////////////////////////////////////////////////// TO MODIFY THE DATA IN LOCAL DATABASE ///////////////////////////////////
         private void button3_Click(object sender, EventArgs e)
         {
             try
@@ -139,6 +143,37 @@ namespace SQL_displayDataInGridview
             }
             
 
+        }
+////////////////////////////////////////////////// TO DELETE THE DATA IN LOCAL DATABASE ///////////////////////////////////
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string sqlStatement = ("DELETE FROM Students WHERE ID = @ID");
+            //SqlCommand cmd = new SqlCommand("DELETE FROM Students WHERE ID = @ID",connection);
+            if (textBox1.Text != "" && textBox2.Text != "")
+            {
+                try
+                    {
+                        connection.Open();
+                        SqlCommand cmd = new SqlCommand(sqlStatement, connection);
+                        cmd.Parameters.AddWithValue("@ID", textBox1.Text);
+                        cmd.CommandType = CommandType.Text;
+                        cmd.ExecuteNonQuery();
+                        connection.Close();
+                        MessageBox.Show("Data Deleted");       
+                    }
+                    catch (Exception msg)
+                        {
+                            MessageBox.Show(msg.Message);
+                        }
+                    finally
+                    {
+                        connection.Close();
+                    }
+            }
+            else
+            {
+                MessageBox.Show("Please Enter ID and Name to delete the data");
+            }
         }
     }
 }

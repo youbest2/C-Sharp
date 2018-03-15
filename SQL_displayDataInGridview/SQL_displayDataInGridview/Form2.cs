@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace SQL_displayDataInGridview
 {
@@ -39,7 +41,24 @@ namespace SQL_displayDataInGridview
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //SqlConnection connection = new SqlConnection();
+            //connection.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\users\uids4736\documents\visual studio 2012\Projects\SQL_displayDataInGridview\SQL_displayDataInGridview\Database1.mdf;Integrated Security=True";
+            //connection.Open();
+            
+            //connection.Close();
+            //DataTable dt = new DataTable();
+            //BindingSource bs = new BindingSource();
+            //bs.DataSource = dt;
+            //dataGridView1.DataSource = bs;
+            
+            
+      
+            
+        }
 
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
